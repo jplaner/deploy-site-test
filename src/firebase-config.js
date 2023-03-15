@@ -1,7 +1,8 @@
-import { initializeApp } from "firebase/app";
-import {getFirestore} from "@firebase/firestore";
+import { initializeApp } from "@firebase/app";
+import { getFirestore } from "@firebase/firestore";
 
-require("dotenv").config();
+//const webpack = require('webpack');
+//require('dotenv').config({path: '/.env'});
 
 const firebaseConfig = {
     apiKey: "AIzaSyBJcxXHy6sv8R5hIo9mcMegJf5MyrEHbCU",
@@ -12,6 +13,6 @@ const firebaseConfig = {
     appId: "1:830061008775:web:63b2a698fd8e45a8062522"
   };
 
-  const app initializeApp(firebaseConfig);
+  const app = initializeApp(firebaseConfig);
 
-  const db = getFirestore();
+  export const db = getFirestore(app);
