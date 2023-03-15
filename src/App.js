@@ -7,9 +7,10 @@ function App() {
   const [newName, setNewName] = useState("")
   const [newAge, setNewAge] = useState(0)
   const [users, setUsers] = useState([]);
-  const usersCollectionRef = collection(db, "users");
+  
 
   const createUser = async () => {
+    const usersCollectionRef = collection(db, "users");
     await addDoc(usersCollectionRef, {name: newName, age: Number(newAge)})
   };
 
@@ -24,6 +25,7 @@ function App() {
     await deleteDoc(userDoc);
   }
   useEffect(() => {
+    const usersCollectionRef = collection(db, "users");
     const getUsers = async () => {
       const data = await getDocs(usersCollectionRef);
       setUsers(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
