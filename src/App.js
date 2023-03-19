@@ -3,9 +3,6 @@ import './App.css';
 import Login from './components/pages/Login.js';
 import Signup from './components/pages/Signup.js';
 import Users from './components/pages/Users.js';
-// import { useState, useEffect } from "react";
-// import {db} from './firebase-config';
-// import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc } from '@firebase/firestore';
 
 function App() {
   return (
