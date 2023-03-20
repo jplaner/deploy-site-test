@@ -3,7 +3,6 @@ import './App.css';
 import Login from './components/pages/Login.js';
 import Signup from './components/pages/Signup.js';
 import Users from './components/pages/Users.js';
-import AuthDetails from './components/pages/AuthDetails';
 
 function App() {
   return (

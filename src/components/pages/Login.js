@@ -34,6 +34,7 @@ const Login = () =>{
                 </input>
                 <button type="submit">Log In</button>
             </form>
+
             <AuthDetails />
         </div>
         
